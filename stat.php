@@ -1,5 +1,6 @@
 <?php
-
+// wget https://jothon-public-files.s3.ap-northeast-1.amazonaws.com/g0v-export-20140816-20210618.zip
+// unzip g0v-export-20140816-20210618.zip
 ini_set('memory_limit', '4g');
 $obj = json_decode(file_get_contents(__DIR__ . '/output/users.json'));
 $users = new StdClass;
